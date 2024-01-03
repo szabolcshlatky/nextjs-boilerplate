@@ -1,7 +1,7 @@
 {
   "name": "nextjs-boilerplate",
   "version": "1.0.0",
-  "description": "Legacy frontend boilerplate",
+  "description": "Fullstack React boilerplate",
   "keywords": [
     "nextjs",
     "tailwindcss",
