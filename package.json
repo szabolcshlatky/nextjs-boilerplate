@@ -1,5 +1,5 @@
 {
-  "name": "react-next-guide",
+  "name": "nextjs-boilerplate",
   "version": "1.0.0",
   "description": "Legacy frontend boilerplate",
   "keywords": [
@@ -15,7 +15,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "react-next-guide"
+    "url": "nextjs-boilerplate"
   },
   "main": "index.ts",
   "type": "module",
