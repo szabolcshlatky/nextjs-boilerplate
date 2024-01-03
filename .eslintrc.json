@@ -1,45 +1,38 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "airbnb-base",
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime"
-  ],
   "root": true,
   "env": {
     "commonjs": true,
-    "es2022": true,
-    "browser": true
+    "browser": true,
+    "es2023": true
   },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/recommended"
+  ],
   "overrides": [
     {
       "env": {
         "node": true
       },
-      "files": [
-        ".eslintrc.{js,cjs,json}"
-      ],
+      "files": [".eslintrc.{js,cjs,mjs,json}"],
       "parserOptions": {
         "sourceType": "script"
       }
     }
-  ],
-  "ignorePatterns": [
-    "dist",
-    ".eslintrc.json"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "prettier"
-  ],
-  "rules": {}
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "linebreak-style": "off"
+  }
 }

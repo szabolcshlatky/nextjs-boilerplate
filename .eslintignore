@@ -1,3 +1,4 @@
+/node_modules/
 *.yaml
 *.yml
 *.log
@@ -15,7 +16,6 @@
 *.jpeg
 *.png
 *.gif
-*.svg
 *.ico
 *.eot
 *.ttf
@@ -29,11 +29,6 @@
 *.iml
 *.DS_Store
 *.ipynb_checkpoints
-*.cjs
-*.map
-*.d.ts
-*.js.map
-*.css.map
 *.env
 *.env.*
 *.env.local

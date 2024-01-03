@@ -1,10 +1,11 @@
 {
-  "name": "nextjs-boilerplate",
-  "description": "NextJS boilerplate",
+  "name": "react-next-guide",
+  "version": "1.0.0",
+  "description": "Legacy frontend boilerplate",
   "keywords": [
     "nextjs",
-    "tailwind",
-    "sass",
+    "tailwindcss",
+    "react",
     "postcss",
     "tsx",
     "jsx"
@@ -12,19 +13,38 @@
   "author": "Coding Sable",
   "license": "ISC",
   "private": true,
-  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "nextjs-boilerplate"
+    "url": "react-next-guide"
   },
+  "main": "index.ts",
+  "type": "module",
   "engines": {
-    "pnpm": ">= 8.10.5"
+    "pnpm": ">=6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "jest": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run lint && pnpm run jest"
+    }
   },
   "dependencies": {
     "next": "14.0.4",
@@ -32,26 +52,34 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/eslint": "^8.56.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/parser": "6.17.0",
     "autoprefixer": "^10.4.16",
-    "cssnano": "^6.0.2",
+    "cssnano": "6.0.2",
     "eslint": "^8.56.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb": "19.0.4",
     "eslint-config-next": "14.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.1.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "lodash": "^4.17.21",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.2",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.5",
+    "husky": "8.0.3",
+    "jest": "29.7.0",
+    "lodash": "4.17.21",
     "postcss": "^8.4.32",
-    "prettier": "^3.1.1",
-    "sass": "^1.69.5",
+    "prettier": "3.1.1",
+    "sass": "1.69.7",
     "tailwindcss": "^3.4.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "uuid": "9.0.1"
   }
 }
