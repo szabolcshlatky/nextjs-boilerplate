@@ -17,7 +17,6 @@
   },
   "main": "layout.tsx",
   "engines": {
-    "vscode": "^1.22.0",
     "pnpm": ">= 8.10.5"
   },
   "husky": {
